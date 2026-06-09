@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gsd-benchmark.local/schemas/stamp.json",
+  "title": "SdlcStageStamp",
+  "description": "Immutable append-only mark for an SDLC stage. Arm-agnostic so vanilla GSD (no tracker) and the recipe arm (tracker-linked) are both measurable on the same KPIs.",
+  "type": "object",
+  "required": ["stamp_id", "step", "status", "at", "arm"],
+  "properties": {
+    "stamp_id": {
+      "type": "string",
+      "description": "Unique id, e.g. uuid or tracker comment id"
+    },
+    "step": {
+      "type": "string",
+      "description": "SDLC stage the mark belongs to",
+      "enum": [
+        "intake",
+        "prd",
+        "prd-to-stories",
+        "story-to-tasks",
+        "design",
+        "tests",
+        "build",
+        "review"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "description": "Lifecycle milestone reached at this stage",
+      "enum": [
+        "started",
+        "prd-approved",
+        "engineering-ready",
+        "build-started",
+        "build-done",
+        "review-ready",
+        "approved",
+        "settled",
+        "reopened",
+        "kb-updated"
+      ]
+    },
+    "at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "arm": {
+      "type": "string",
+      "description": "Which experiment arm produced this stamp; required so KPIs compare across arms",
+      "enum": ["baseline", "gsd", "recipe"]
+    },
+    "actor": {
+      "type": "string",
+      "description": "Who advanced the stage; powers the human-touch-ratio KPI",
+      "enum": ["human", "agent"]
+    },
+    "tracker": {
+      "type": "object",
+      "description": "Optional. Present when a stage is linked to a live tracker issue (recipe arm). Vanilla GSD/baseline omit it.",
+      "required": ["system", "issue_key"],
+      "properties": {
+        "system": { "type": "string", "enum": ["jira", "github", "none"] },
+        "issue_key": { "type": "string" },
+        "parent_key": { "type": "string" },
+        "url": { "type": "string", "format": "uri" }
+      }
+    },
+    "operator": { "type": "string" },
+    "run_id": { "type": "string" },
+    "feature_id": { "type": "string" },
+    "notes": { "type": "string" }
+  },
+  "additionalProperties": false
+}

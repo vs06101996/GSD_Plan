@@ -1,0 +1,17 @@
+# {{TASK_ID}} — benchmark task spec
+
+Describe the feature or change the agent must implement. This file is copied into each run as `SPEC.md`.
+
+## Goal
+
+<!-- What should exist when the agent is done? -->
+
+## Acceptance criteria
+
+<!-- Observable outcomes; hidden tests in tasks/{{TASK_ID}}/grader/ encode pass/fail. -->
+
+## Constraints
+
+- Work in the run workspace only (see `RUN_INSTRUCTIONS.md`).
+- Do not read `tasks/{{TASK_ID}}/grader/` or other hidden test paths.
+- Module: `{{MODULE}}`

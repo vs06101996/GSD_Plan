@@ -1,0 +1,20 @@
+{
+  "feature_id": "feature-a",
+  "description": "Already-shipped feature — anchor baseline (hand-filled from historical record)",
+  "service": "",
+  "tracker_issue": "",
+  "shipped_at": null,
+  "delivery": {
+    "total_calendar_days": null,
+    "total_engineering_days": null,
+    "note": "Use team's historical estimate; not re-run through agent"
+  },
+  "quality_after_ship": {
+    "defects_found": null,
+    "incidents": null,
+    "rework_items": null,
+    "window_days": 30
+  },
+  "method": "baseline-human-orchestrated",
+  "source": "agent-studio-historical"
+}

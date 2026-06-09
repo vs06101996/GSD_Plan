@@ -1,0 +1,9 @@
+results/**/artifact/
+results/**/transcript.txt
+runs/**/workspace/
+runs/**/.planning/
+*.log
+.DS_Store
+tasks/uber-eats/grader/go.mod.bak
+# Reference oracles are local clones (provisioned via register.sh --git); never track them as embedded repos/submodules
+tasks/*/reference/

@@ -1,0 +1,9 @@
+{
+  "name": "gsd-benchmark-harness",
+  "private": true,
+  "description": "Placeholder for future TypeScript runners (claude-agent-sdk)",
+  "scripts": {
+    "aggregate": "python3 report/aggregate.py",
+    "validate": "bash runners/validate-pipeline.sh"
+  }
+}

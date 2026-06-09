@@ -1,0 +1,19 @@
+id: occm
+mode: brownfield
+language: scala
+
+spec: SPEC.md
+
+scala:
+  root_marker: build.sbt
+  compile: common/compile
+  test: none
+  grader_dir: grader
+
+source:
+  type: local
+  local_path: /Users/vs72964/Repositories/Occm/cvo/occm-root
+
+workspace:
+  strategy: copy_per_run
+  subdir: workspace

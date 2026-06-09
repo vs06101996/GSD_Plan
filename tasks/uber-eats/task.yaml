@@ -1,0 +1,16 @@
+id: uber-eats
+mode: greenfield
+language: go
+
+spec: SPEC.md
+
+go:
+  module: uber-eats
+  grader_dir: grader
+
+source:
+  type: bundled
+
+workspace:
+  strategy: copy_per_run
+  subdir: workspace

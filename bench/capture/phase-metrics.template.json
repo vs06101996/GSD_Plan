@@ -1,0 +1,51 @@
+{
+  "feature_id": "feature-b",
+  "arm": "gsd",
+  "operator": "",
+  "tracker_issue": "",
+  "phases": [
+    {
+      "name": "prd-to-stories",
+      "started_at": null,
+      "first_approval_at": null,
+      "settled_at": null,
+      "post_approval_reopens": 0
+    },
+    {
+      "name": "design",
+      "started_at": null,
+      "first_approval_at": null,
+      "settled_at": null,
+      "post_approval_reopens": 0
+    },
+    {
+      "name": "implementation",
+      "started_at": null,
+      "first_approval_at": null,
+      "settled_at": null,
+      "post_approval_reopens": 0
+    },
+    {
+      "name": "review",
+      "started_at": null,
+      "first_approval_at": null,
+      "settled_at": null,
+      "post_approval_reopens": 0
+    }
+  ],
+  "delivery": {
+    "intent_approved_at": null,
+    "result_approved_at": null,
+    "total_seconds": null
+  },
+  "cost": {
+    "tokens": null,
+    "invocations": null,
+    "note": "stretch — capture when orchestrator exposes"
+  },
+  "grader": {
+    "pass": null,
+    "graded_at": null,
+    "note": "Filled by finalize-run.sh / grade.json"
+  }
+}

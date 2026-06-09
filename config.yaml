@@ -1,0 +1,28 @@
+# Frozen benchmark settings — do not change mid-benchmark
+#
+# Experiment arms (see docs/EXPERIMENT-AGENDA.md):
+#   baseline — human-orchestrated agent (rung 1)
+#   gsd      — vanilla GSD orchestrator (rung 2)
+#   recipe   — GSD + bench/recipe/ + tracker stamps (rung 3; partial)
+experiment_arms:
+  - baseline
+  - gsd
+  - recipe
+gsd_package: "@opengsd/gsd-core@1.2.0"
+gsd_install_method: "git_clone /tmp/gsd-core + node bin/install.js --claude --global --profile=standard"
+gsd_hooks: installed
+primary_runtime: cursor
+cursor_install: "node /tmp/gsd-core/bin/install.js --cursor --local --profile=standard"
+claude_cli: optional
+gsd_install_scope: global
+gsd_installed_at: "2026-06-02"
+claude_version: "2.1.152"
+go_version: "1.26.3"
+model: "claude-sonnet-4-20250514"  # update if your Claude Code default differs
+mode: yolo
+model_profile: balanced
+runs_per_arm: 5
+active_task: uber-eats
+# Legacy alias (resolve-task reads both):
+task: uber-eats
+isolation: fresh_directory_per_run  # docker optional after pilot

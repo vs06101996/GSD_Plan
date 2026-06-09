@@ -1,0 +1,6 @@
+{
+  "arm": "baseline",
+  "run_id": "run-01",
+  "status": "awaiting_claude_login",
+  "note": "Run claude /login then execute bench/runners/run-baseline.sh or interactive GSD per RUNBOOK.md"
+}

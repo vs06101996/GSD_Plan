@@ -1,0 +1,11 @@
+{
+  "pass": true,
+  "build_ok": true,
+  "vet_ok": true,
+  "tests_ok": true,
+  "tests_passed": 14,
+  "tests_total": 14,
+  "artifact": "/Users/vs72964/Projects/gsd-benchmark/results/gsd/run-01/artifact",
+  "task_id": "uber-eats",
+  "go_module": "uber-eats"
+}

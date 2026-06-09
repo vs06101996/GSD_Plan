@@ -1,0 +1,17 @@
+# occm — Scala benchmark task spec
+
+Describe the feature or change the agent must implement in the **Scala/SBT** codebase.
+
+## Goal
+
+<!-- What should exist when the agent is done? -->
+
+## Acceptance criteria
+
+<!-- Observable outcomes; hidden checks live under tasks/occm/grader/ -->
+
+## Constraints
+
+- Work in the run `workspace/` copy (brownfield) or from SPEC only (greenfield).
+- Do not read `tasks/occm/grader/`.
+- Build with `sbt` from the repository root (`build.sbt`).

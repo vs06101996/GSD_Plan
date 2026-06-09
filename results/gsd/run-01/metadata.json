@@ -1,0 +1,9 @@
+{
+  "arm": "gsd",
+  "run_id": "run-01",
+  "validation": "reference_oracle",
+  "status": "pipeline_validated_reference_oracle",
+  "live_agent": false,
+  "note": "Grader path verified with reference copy; run live agent after claude /login",
+  "task_id": "uber-eats"
+}
